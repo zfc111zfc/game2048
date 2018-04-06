@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administractor.game2048.MainActivity"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="得分:"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        />
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/buttonRestart"-->
+                <!--android:text="重新开始"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_alignLeft="@id/tvScore"-->
+                <!--android:layout_alignBottom="@id/tvScore"-->
+                <!--android:layout_below="@id/tvScore"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+</LinearLayout>
+    //使用自定义的GridLayout
+<com.example.dell.a2048.GameView
+android:layout_width="fill_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:id="@+id/GameView" >
+</com.example.dell.a2048.GameView>
+    </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
